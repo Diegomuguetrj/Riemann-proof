@@ -1,75 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Diego Muguet's geometric-spectral proof of the Riemann Hypothesis: a breakthrough via torsion-free vector waves." />
-  <meta name="keywords" content="Riemann Hypothesis, Spectral Coherence, Geometric Proof, Diego Muguet, FOR(N), Torsion" />
-  <meta name="author" content="Diego Muguet de Magalhães" />
-  <title>Spectral Proof of the Riemann Hypothesis</title>
+  <meta charset="UTF-8">
+  <title>Prova da Hipótese de Riemann – Diego Muguet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Prova da Hipótese de Riemann – Diego Muguet">
+  <meta property="og:description" content="Versão final do artigo com Apêndices G, H, I, J demonstrando a equivalência espectral da Hipótese de Riemann.">
+  <meta property="og:url" content="https://diegomuguet.org">
   <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: #f7f7f7; color: #222; }
-    header { background: #111; color: #fff; padding: 2rem 1rem; text-align: center; }
-    nav { background: #333; padding: 1rem; text-align: center; }
-    nav a { color: #fff; margin: 0 1rem; text-decoration: none; }
-    main { max-width: 900px; margin: auto; padding: 2rem; background: white; box-shadow: 0 0 8px rgba(0,0,0,0.1); }
-    footer { background: #111; color: #fff; text-align: center; padding: 1rem; font-size: 0.9em; }
-    h1, h2 { color: #222; }
-    .button { display: inline-block; background: #0066cc; color: #fff; padding: 0.6rem 1.2rem; margin: 1rem 0; text-decoration: none; border-radius: 5px; }
-    .share-buttons a { margin: 0 10px; text-decoration: none; font-size: 1.2rem; }
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: #fdfdfd;
+      color: #222;
+    }
+    h1, h2 {
+      color: #007acc;
+    }
+    a {
+      color: #005599;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .share-buttons a {
+      margin-right: 10px;
+      display: inline-block;
+    }
+    .highlight-box {
+      border: 2px solid #007acc;
+      padding: 20px;
+      background-color: #eef7ff;
+      margin-bottom: 30px;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1 style="color: white; font-weight: bold; text-shadow: 1px 1px 4px black;">
-  Spectral Coherence and the Riemann Hypothesis
-</h1>
-    <p>Geometric Reformulation by Diego Muguet de Magalhães</p>
-  </header>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#proof">The Proof</a>
-    <a href="#links">Preprint Links</a>
-    <a href="#contact">Contact</a>
-    <a href="hipotese-de-riemann.html">Prova da Hipótese de Riemann</a>
-  </nav>
-  <main>
-    <section id="about">
-      <h2>About the Author</h2>
-      <p>Diego Muguet de Magalhães is an independent mathematician and economist from Rio de Janeiro, Brazil. His work bridges geometry, spectral dynamics, and number theory to address one of the most famous open problems in mathematics: the Riemann Hypothesis.</p>
-    </section>
-    <section id="proof">
-      <h2>The Spectral-Geometric Reformulation</h2>
-      <p>The central claim of this work is that the Riemann Hypothesis is equivalent to the absence of torsion in a specific vector function constructed from the zeta function's non-trivial zeros:</p>
-      <p><strong>RH &harr; &tau;(N) = 0 for all N &gt; 0</strong></p>
-      <p>The Function of Residual Oscillation, FOR(N), built from N^ρ/ρ across all zeros, behaves like a wave in the complex plane. If this wave remains directionally stable (i.e., no angular distortion), the zeros must lie on the critical line Re(ρ) = 1/2.</p>
-      <a class="button" href="Riemann_Hypothesis_Muguet_FINAL_CLAY_PROOF.pdf" download>Download the Full Paper (PDF)</a>
-    </section>
-    <section id="links">
-      <h2>Access the Article on Academic Platforms</h2>
-      <ul>
-        <li><a href="https://zenodo.org/records/15284466" target="_blank">Zenodo</a></li>
-        <li><a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/IUN9GR" target="_blank">Harvard Dataverse</a></li>
-        <li><a href="https://www.cambridge.org/engage/coe/article-details/680f0075e561f77ed423c8ee" target="_blank">Cambridge Open Engage</a></li>
-        <li><a href="https://www.preprints.org/manuscript/202504.1534/v2" target="_blank">Preprints.org</a></li>
-        <li><a href="https://figshare.com/articles/journal_contribution/Spectral_Coherence_and_Geometric_Reformulation_of_the_Riemann_Hypothesis_via_Torsion-Free_Vector_Waves/28792004?file=53663909" target="_blank">Figshare</a></li>
-      </ul>
-    </section>
-    <section class="share-buttons">
-      <h2>Share this page</h2>
-      <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20geometric%20proof%20of%20the%20Riemann%20Hypothesis%20by%20Diego%20Muguet&url=https://example.com" target="_blank">Twitter/X</a>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https://example.com" target="_blank">Facebook</a>
-      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://example.com" target="_blank">LinkedIn</a>
-      <a href="https://api.whatsapp.com/send?text=Check%20this%20out:%20https://example.com" target="_blank">WhatsApp</a>
-      <a href="mailto:?subject=Riemann%20Hypothesis%20Proof&body=Take%20a%20look%20at%20this%20proof:%20https://example.com">Email</a>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:dieguiks@gmail.com">dieguiks@gmail.com</a></p>
-    </section>
-  </main>
-  <footer>
-    &copy; 2025 Diego Muguet de Magalhães. All rights reserved.
-  </footer>
+
+  <h1>Prova da Hipótese de Riemann</h1>
+  <p><strong>Autor:</strong> Diego Muguet de Magalhães</p>
+  <p><strong>Atualizado em:</strong> 13 de maio de 2025</p>
+
+  <div class="highlight-box">
+    <h2>Versão Final Disponível</h2>
+    <p>O artigo completo foi atualizado com os Apêndices <strong>G, H, I e J</strong>, consolidando a equivalência espectral da Hipótese de Riemann.</p>
+    <p><strong>Leia no Zenodo:</strong><br>
+      <a href="https://zenodo.org/records/15399557" target="_blank">
+        https://zenodo.org/records/15399557
+      </a>
+    </p>
+  </div>
+
+  <h2>Outras plataformas onde o artigo está publicado:</h2>
+  <ul>
+    <li><a href="https://www.preprints.org/manuscript/202504.1534/v3" target="_blank">Preprints.org</a></li>
+    <li><a href="https://www.cambridge.org/engage/coe/article-details/681631a4927d1c2e66d88582" target="_blank">Cambridge Open Engage</a></li>
+    <li><a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/IUN9GR" target="_blank">Harvard Dataverse</a></li>
+  </ul>
+
+  <h2>Compartilhe esta página:</h2>
+  <div class="share-buttons">
+    <a href="https://twitter.com/intent/tweet?text=Confira+a+prova+da+Hipótese+de+Riemann+por+Diego+Muguet:+https://diegomuguet.org" target="_blank">Twitter</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://diegomuguet.org" target="_blank">Facebook</a>
+    <a href="https://wa.me/?text=Confira%20a%20prova%20da%20Hip%C3%B3tese%20de%20Riemann:%20https://diegomuguet.org" target="_blank">WhatsApp</a>
+    <a href="mailto:?subject=Hipótese de Riemann por Diego Muguet&body=Veja este artigo: https://diegomuguet.org" target="_blank">E-mail</a>
+  </div>
+
+  <hr>
+  <p>Contato: <a href="mailto:diego@diegomuguet.org">diego@diegomuguet.org</a></p>
+
 </body>
 </html>
